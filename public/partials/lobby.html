@@ -49,7 +49,7 @@
 		</tr>
 		<tr ng-repeat="table in lobbyTables">
 			<td align="center"><h3><a href="/table-{{table.seatsCount}}/{{table.id}}">{{table.name}}</a></h3></td>
-			<td class="centered-text"><h3>{{table.bigBlind}}/{{table.smallBlind}}</h3></td>
+			<td class="centered-text"><h3>{{table.smallBlind}}/{{table.bigBlind}}</h3></td>
 			<td align="center"><b><h5>Occupied</b> {{table.playersSeatedCount}} <br><b>Capacity</b> {{table.seatsCount}}</h5></td>
 		</tr>
 	</table><hr>
