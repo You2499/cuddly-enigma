@@ -35,25 +35,49 @@
         <button type="submit" class="btn btn-primary">Login</button>
       </div>
 	  </form>
-
     </div>
   </div>
 </div>
 <center><br>
-<h1>Select A Table</h1>
+<h1>Select A Table</h1></center>
+<div id="box1"><h3>6 Seat Tables</h3>
+	<table>
+		<tr>
+			<th><a href="/table-{{6}}/{{1}}" class="button"><h3>Table 1</h3></a></th>
+			<th><a href="/table-{{6}}/{{2}}" class="button"><h3>Table 2</h3></a></th>
+		<tr>
+			<td class="border-style" align="center"><p><b>Buy-In:</b> 200<p><b>Small Blind:</b> 1 <p><b>Big Blind:</b> 2</td>
+			<td align="center"><p><b>Buy-In:</b> 1000<p><b>Small Blind:</b> 5 <p><b>Big Blind:</b> 10</td>
+	</table>
+	<!-- <a href="/table-{{6}}/{{1}}" class="button"><h3>Table 1</h3></a> -->
+	<!-- <a href="/table-{{6}}/{{2}}" class="button"><h3>Table 2</h3></a> -->
+</div>&nbsp;&nbsp
+<div id="box1"><h3>10 Seat Tables</h3>
+	<table>
+		<tr>
+			<th><a href="/table-{{10}}/{{3}}" class="button"><h3>Table 1</h3></a></th>
+			<th><a href="/table-{{10}}/{{4}}" class="button"><h3>Table 2</h3></a></th>
+		<tr>
+			<td class="border-style" align="center"><p><b>Buy-In:</b> 500<p><b>Small Blind:</b> 1 <p><b>Big Blind:</b> 2</td>
+			<td align="center"><p><b>Buy-In:</b> 1000<p><b>Small Blind:</b> 5 <p><b>Big Blind:</b> 10</td>
+	</table></div>
+<!-- <table id="table-list">
+	<tr>
+		<th class="border-style"><h3><a href="/table-{{6}}/{{1}}">Table 1</a></h3></th>
+		<th class="border-style"><h3><a href="/table-{{6}}/{{2}}">Table 2</a></h3></th>
+	</tr>
+	<td class="border-style2"><b>Buy-In:</b> 200</td>
+	<td class="border-style2"><b>Buy-In:</b> 200</td>
+</table><p> -->
+<!-- <h2>10 Seat Tables<h2>
 	<table id="table-list" class="noborder">
 		<tr>
-			<th class="centered-text"><h4>Available Tables</h4></th>
-			<th class="centered-text"><h4>SB/BB</h4></th>
-			<th class="centered-text"><h4>Current Status</h4></th>
+			<th class="border-style"><h3><a href="/table-{{10}}/{{3}}">Table 1</a></h3></th>
 		</tr>
-		<tr ng-repeat="table in lobbyTables">
-			<td align="center"><h3><a href="/table-{{table.seatsCount}}/{{table.id}}">{{table.name}}</a></h3></td>
-			<td class="centered-text"><h3>{{table.smallBlind}}/{{table.bigBlind}}</h3></td>
-			<td align="center"><b><h5>Occupied</b> {{table.playersSeatedCount}} <br><b>Capacity</b> {{table.seatsCount}}</h5></td>
-		</tr>
-	</table><hr>
-</div>
+		<td class="border-style2"><b>Buy-In:</b> 200</td>
+	</table>
+</div>-->
+<hr>
 	<h2>Some Important Things</h2>
 	<serious>
 	<p><b> DONT SHARE THIS LINK WITH ANYONE ELSE </b><br>
@@ -62,4 +86,17 @@
 			<p><em>The poker script is not mine. Only the UI, Data Mapping, Setting up the Back-End Node Server and Deployment is done by me.</em></p>
 			<br> <h4>Made with <i class="fab fa-node-js fa-7x"></i> <i class="fab fa-angular fa-7x"></i> <i class="fab fa-js fa-7x"></i> by Gagan Gupta</h4>
 <!-- <button ng-show="!$root.screenName" class="btn btn-primary"  data-toggle="modal" data-target="#loginModal">Login</button>
-<button ng-show="!$root.screenName" class="btn btn-primary" id="loginRegisterPopup">Login2</button>
+<button ng-show="!$root.screenName" class="btn btn-primary" id="loginRegisterPopup">Login2</button> -->
+
+<!-- <table id="table-list" class="noborder">
+	<tr>
+<th class="centered-text"><h4>Available Tables</h4></th>
+<th class="centered-text"><h4>SB/BB</h4></th>
+<th class="centered-text"><h4>Current Status</h4></th>
+</tr>
+<tr ng-repeat="table in lobbyTables">
+<td align="center"><h3><a href="/table-{{table.seatsCount}}/{{table.id}}">{{table.name}}</a></h3></td>
+<!-- <td class="centered-text"><h3>{{table.smallBlind}}/{{table.bigBlind}}</h3></td>
+<td align="center"><b><h5>Occupied</b> {{table.playersSeatedCount}} <br><b>Capacity</b> {{table.seatsCount}}</h5></td> -->
+<!-- </tr> -->
+<!-- </table> -->
