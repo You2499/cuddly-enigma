@@ -1,12 +1,20 @@
+<html>
 <div id="lobby">
 <div class="modal-wrap" ng-show="!$root.screenName">
 		<div class="modal" style="display:block;">
 			<form ng-submit="register()">
 					<h2>Username</h2>
 					<em>This will reset as soon as you refresh or close this session</em><br><hr>
-					<center><h4><label for="screen-name-input">Enter your name</label></h4>
+					<center><h4><label for="screen-name-input">Select your name</label></h4>
 					<p class="table-requirements error" ng-show="registerError">{{registerError}}</p>
-					<input id="screen-name-input" class="form-control" type="text" ng-model="newScreenName" ng-trim="true" required><br>
+					<!-- <input id="screen-name-input" class="form-control" type="text" ng-model="newScreenName" ng-trim="true" required><br> -->
+					<select class="screen-name-input" class="form-control" ng-model="newScreenName" ng-trim="true" required><br>
+						<option>Gagan</option>
+						<option>Nikhil</option>
+						<option>Manan</option>
+						<option>Udit</option>
+						<option>Amit</option>
+					</select>
 					<input type="submit" value="Confirm" class="btn btn-primary">
 			</form>
 		</div>
@@ -38,7 +46,9 @@
     </div>
   </div>
 </div>
-<center><br>
+<center><br><div align="right"><div id="box1">
+	<h3>User Details</h3><hr>Username <b>{{$root.screenName}}</b><br>
+Total Chip Count <b>{{$root.totalChips}}</b></div></div><p>
 <h1>Select A Table</h1></center>
 <div id="box1"><h3>6 Seat Tables</h3>
 	<table>
@@ -100,3 +110,4 @@
 <td align="center"><b><h5>Occupied</b> {{table.playersSeatedCount}} <br><b>Capacity</b> {{table.seatsCount}}</h5></td> -->
 <!-- </tr> -->
 <!-- </table> -->
+</html>
