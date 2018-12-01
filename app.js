@@ -180,7 +180,7 @@ io.sockets.on('connection', function( socket ) {
 				}
 				if( !nameExists ) {
 					// Creating the player object
-					players[socket.id] = new Player( socket, newScreenName, 25000 );
+					players[socket.id] = new Player( socket, newScreenName, 100000 );
 					callback( { 'success': true, screenName: newScreenName, totalChips: players[socket.id].chips } );
 				} else {
 					callback( { 'success': false, 'message': 'This name is taken' } );
@@ -431,7 +431,7 @@ function htmlEntities(str) {
 // ( id, name, eventEmitter, seatsCount, bigBlind, smallBlind, maxBuyIn, minBuyIn, privateTable )
 tables[0] = new Table( 0, 'Sample 6-handed Private Table', eventEmitter(0), 6, 20, 10, 2000, 400, true );
 tables[1] = new Table( 1, 'Cheap Ass Niggas', eventEmitter(1), 6, 200, 100, 3000, 200, false );
-tables[2] = new Table( 2, 'Hmmmm', eventEmitter(2), 6, 400, 200, 10000, 160, false );
+tables[2] = new Table( 2, 'Hmmmm', eventEmitter(2), 6, 400, 200, 100000, 100000, false );
 tables[3] = new Table( 3, ':)', eventEmitter(3), 6, 500, 300, 20000, 40, false );
 tables[4] = new Table( 4, '6 Seat Table', eventEmitter(4), 6, 10, 5, 1000, 40, false );
 // tables[4] = new Table( 4, '2 Seat Table', eventEmitter(4), 2, 8, 4, 800, 160, false );
