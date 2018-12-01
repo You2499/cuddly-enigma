@@ -47,35 +47,48 @@
   </div>
 </div>
 <center><br><div class="alert">
-  <!-- <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> -->
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
   <h5>Chips amount will reset back to <b>{{$root.totalChips}}</b> upon refreshing!</h5>
-	Working on a way to store the amount <br>
-	And making a Progressive Web App <i class="fas fa-heart"></i>
-</div><div align="right"><div id="box2">
+	<p><em>Work In Progress</em>
+  <li>A way to store the chip amount</li>
+  <li>Make a Progressive Web App </li>
+  <li>Interface Update</li>
+	<i class="fas fa-heart"></i></div>
+<div align="right"><div id="box2">
 	<h3>Welcome <b>{{$root.screenName}}</b></h3>
 	<h5>Chips Remaining: <b>{{$root.totalChips}}</b></h5></div></div><p>
-<h1>Select A Table</h1></center>
-<div id="box1"><h3>6 Seat Tables</h3>
-	<table>
-		<tr>
-			<th><a href="/table-{{6}}/{{1}}" class="button"><h3>Table 1</h3></a></th>
-			<th><a href="/table-{{6}}/{{2}}" class="button"><h3>Table 2</h3></a></th>
-		<tr>
-			<td class="border-style" align="center"><p><b>Buy-In:</b> 200<p><b>Small Blind:</b> 1 <p><b>Big Blind:</b> 2</td>
-			<td align="center"><p><b>Buy-In:</b> 1000<p><b>Small Blind:</b> 5 <p><b>Big Blind:</b> 10</td>
-	</table>
-	<!-- <a href="/table-{{6}}/{{1}}" class="button"><h3>Table 1</h3></a> -->
-	<!-- <a href="/table-{{6}}/{{2}}" class="button"><h3>Table 2</h3></a> -->
-</div>&nbsp;&nbsp
-<div id="box1"><h3>10 Seat Tables</h3>
-	<table>
-		<tr>
-			<th><a href="/table-{{10}}/{{3}}" class="button"><h3>Table 1</h3></a></th>
-			<th><a href="/table-{{10}}/{{4}}" class="button"><h3>Table 2</h3></a></th>
-		<tr>
-			<td class="border-style" align="center"><p><b>Buy-In:</b> 500<p><b>Small Blind:</b> 1 <p><b>Big Blind:</b> 2</td>
-			<td align="center"><p><b>Buy-In:</b> 1000<p><b>Small Blind:</b> 5 <p><b>Big Blind:</b> 10</td>
-	</table></div>
+<hr>
+<table>
+	<tr>
+		<th><h1>Beginner Level</h1></th>
+		<th><a href="/table-{{6}}/{{1}}" class="button"><h3>Enter Room</h3></a></th>
+	</tr>
+		<td><h5><b>Buy-In</b> 3000</td>
+		<td align="right"><h5><b>Stakes</b> 100/200</h5></td>
+</table><p></p>
+<table>
+	<tr>
+		<th><h1>Amateur Level&nbsp;</h1></th>
+		<th><a href="/table-{{6}}/{{2}}" class="button"><h3>Enter Room</h3></a></th>
+	</tr>
+		<td><h5><b>Buy-In</b> 10000</td>
+		<td align="right"><h5><b>Stakes</b> 200/400</h5></td>
+</table><p></p>
+<table>
+	<tr>
+		<th><h1>Professional Level</h1></th>
+		<th><a href="/table-{{6}}/{{3}}" class="button"><h3>Enter Room</h3></a></th>
+	</tr>
+		<td><h5><b>Buy-In</b> 20000</td>
+		<td align="right"><h5><b>Stakes</b> 300/500</h5></td>
+</table>	<!-- <div id="box1">
+				<a href="/table-{{6}}/{{2}}" class="button"><h3>Amateur Level</h3></a>
+				<div align="left"><p><br><b>Buy-In:</b> 200<br><b>Small Blind:</b> 1 <br><b>Big Blind:</b> 2</div>
+	</div><p>
+	<div id="box1">
+				<a href="/table-{{6}}/{{3}}" class="button"><h3>Pro Level</h3></a>
+				<div align="left"><p><br><b>Buy-In:</b> 200<br><b>Small Blind:</b> 1 <br><b>Big Blind:</b> 2</div>
+	</div> -->
 <!-- <table id="table-list">
 	<tr>
 		<th class="border-style"><h3><a href="/table-{{6}}/{{1}}">Table 1</a></h3></th>
@@ -92,7 +105,7 @@
 		<td class="border-style2"><b>Buy-In:</b> 200</td>
 	</table>
 </div>-->
-<hr>
+</center><hr>
 	<h2>Some Important Things</h2>
 	<serious>
 	<p><b> DONT SHARE THIS LINK WITH ANYONE ELSE </b><br>
