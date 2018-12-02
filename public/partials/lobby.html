@@ -8,16 +8,16 @@
 					<center><h4><label for="screen-name-input">Select your name</label></h4>
 					<p class="table-requirements error" ng-show="registerError">{{registerError}}</p>
 					<!-- <input id="screen-name-input" class="form-control" type="text" ng-model="newScreenName" ng-trim="true" required><br> -->
-					<select class="screen-name-input" class="form-control" ng-model="newScreenName" ng-trim="true" required>
-						<option value="Gagan" selected>Gagan</option>
-						<option value="Nikhil">Nikhil</option>
-						<option value="Manan">Manan</option>
-						<option value="Udit">Udit</option>
-						<option value="Amit">Amit</option>
-						<option value="Hemang">Hemang</option>
-						<option value="Prasang">Prasang</option>
-					</select>
-					<input type="submit" value="Confirm" class="btn btn-primary">
+<select class="screen-name-input" class="form-control" ng-model="newScreenName" ng-trim="true" required>
+	<option>Gagan</option>
+	<option>Nikhil</option>
+	<option>Manan</option>
+	<option>Udit</option>
+	<option>Amit</option>
+	<option>Hemang</option>
+	<option>Prasang</option>
+</select>
+<input type="submit" value="Confirm" class="btn btn-primary">
 			</form>
 		</div>
 		<div id="curtain" ng-show="!$root.screenName"></div>

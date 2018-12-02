@@ -56,8 +56,8 @@ Player.prototype.leaveTable = function() {
 /**
  * Sits the player on the table
  * @param  string   tableId
- * @param  number   seat    
- * @param  number   chips   
+ * @param  number   seat
+ * @param  number   chips
  */
 Player.prototype.sitOnTable = function( tableId, seat, chips ) {
     // Remove the chips that player will have on the table, from the player object
@@ -154,11 +154,11 @@ Player.prototype.evaluateHand = function( board ) {
             cards[index2] = tmp;
         }
     };
-	
+
 	var rateHand = function( hand ) {
 		return cardNamess.indexOf( hand[0][0] ) * 30941 + cardNamess.indexOf( hand[1][0] ) * 2380 + cardNamess.indexOf( hand[2][0] ) * 183 + cardNamess.indexOf( hand[3][0] ) * 14 + cardNamess.indexOf( hand[4][0] );
 	}
-    
+
     // Sorting the 7 cards
     cards.sort( function( a, b ) {
         return cardNamess.indexOf( b[0] ) - cardNamess.indexOf( a[0] );
@@ -177,7 +177,7 @@ Player.prototype.evaluateHand = function( board ) {
             'rating'    : 0,
             'cards'     : [],
         };
-        
+
     // Getting the suit of the first card
     flushes[ cards[0][1] ].push( cards[0] );
     // Pushing the first card in the array of the straight
@@ -191,7 +191,7 @@ Player.prototype.evaluateHand = function( board ) {
         // Get the card value
         var currentCardValue = cardNamess.indexOf( cards[i][0] );
         var previousCardValue = cardNamess.indexOf( straight[straight.length-1][0] );
-        
+
         // If the current value is smaller than the value of the previous card by one, push it to the straight array
         if( currentCardValue + 1 == previousCardValue ) {
             straight.push( cards[i] );
@@ -216,14 +216,14 @@ Player.prototype.evaluateHand = function( board ) {
         if( straight[straight.length-1][0] == '2' && cards[0][0] == 'A' ) {
             straight.push( cards[0] );
         }
-        
+
         // If there is a straight, change the evaluated hand to a straight
         if( straight.length >= 5 ) {
             evaluatedHand.rank = 'straight';
             evaluatedHand.cards = straight.slice( 0, 5 );
         }
     }
-	
+
     // If there is a flush
     for( var i in flushes ) {
 		var flushLength = flushes[i].length;
@@ -255,7 +255,7 @@ Player.prototype.evaluateHand = function( board ) {
 						evaluatedHand.rank = 'straight flush';
 					}
 				}
-            } 
+            }
 			// If the hand isn't a straight flush, change it to a flush
 			if( evaluatedHand.rank != 'straight flush' && evaluatedHand.rank != 'royal flush' ) {
                 evaluatedHand.rank = 'flush';
@@ -319,11 +319,11 @@ Player.prototype.evaluateHand = function( board ) {
                 if( pairs[Object.keys(pairs)[0]].length > pairs[Object.keys(pairs)[1]].length || ( pairs[Object.keys(pairs)[0]].length == pairs[Object.keys(pairs)[1]].length && cardNamess.indexOf( Object.keys(pairs)[0] ) > cardNamess.indexOf( Object.keys(pairs)[1] ) ) ){
                     evaluatedHand.cards = pairs[ Object.keys(pairs)[0] ];
                     delete pairs[ Object.keys(pairs)[0] ];
-                } else { 
+                } else {
                     evaluatedHand.cards = pairs[ Object.keys(pairs)[1] ];
                     delete pairs[ Object.keys(pairs)[1] ];
                 }
-                
+
                 // If the biggest pair has two cards
                 if( evaluatedHand.cards.length == 2 ) {
                     // Add the other two cards to the evaluated hand
@@ -400,7 +400,7 @@ Player.prototype.evaluateHand = function( board ) {
 						evaluatedHand.cards.push( pairs[Object.keys(pairs)[1]][j] );
                     }
                 }
-                
+
 				// If the biggest pair has two cards, add one kicker
 				if( evaluatedHand.rank == 'two pair' ) {
 					while( kickers < 1 ) {
@@ -419,7 +419,7 @@ Player.prototype.evaluateHand = function( board ) {
         evaluatedHand.rank = 'high card';
         evaluatedHand.cards = cards.slice( 0, 5 );
     }
-	
+
 	switch( evaluatedHand.rank ) {
 		case 'high card':
 			evaluatedHand.name = getCardName( evaluatedHand.cards[0][0] ) + ' high';
