@@ -1,11 +1,15 @@
 <html>
 	<head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	</head><center>
-<h1>Working on Updates</h1>
-<li>UI presented after Sit-In
-<li>Connecting with MySQL<br><p>
-<em>Check back later for updated version!</em></center><hr>
+	</head>
+<center>
+<div class="alert">
+	<!-- <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> -->
+	<h1>NOTICE!</h1>
+	<li>The Stakes, Buy-In and Room Name are not accurate!
+	<li>Database to store chip data will be added soon<br><p>
+	<em>Check back later for updated version!</em><div>
+		<h5>Chips amount will reset back to <b>100000</b> upon refreshing!</h5></center><hr>
 <div id="lobby">
 <div class="modal-wrap" ng-show="!$root.screenName">
 		<div class="modal" style="display:block;">
@@ -56,9 +60,6 @@
   </div>
 </div>
 <center>
-	<div class="alert">
-  <!-- <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> -->
-  <h5>Chips amount will reset back to <b>100000</b> upon refreshing!</h5></div>
 <div align="right"><div id="box1">
 	<h3>Welcome <b>{{$root.screenName}}</b></h3>
 	<h5>Chips Remaining: <b>{{$root.totalChips}}</b></h5></div></div><p>
@@ -92,5 +93,5 @@
 </div>
 			<p><b><em>The poker script is not mine.</b><br>
 The UI, Data Mapping, Setting up the Back-End Node Server and Deployment on Heroku is done by me.</em></p>
-			<br><h4>Made with <i class="fab fa-node-js fa-7x"></i> <i class="fab fa-angular fa-7x"></i> <i class="fab fa-js fa-7x"></i> by Gagan Gupta</h4>
+			<br><h4>Made by Gagan Gupta</h4>
 </html>
