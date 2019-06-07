@@ -16,7 +16,7 @@
 			<form ng-submit="register()">
 					<h2>Username</h2>
 					<em>This will reset as soon as you refresh or close this session</em><br><hr>
-					<center><h4><label for="screen-name-input">Select your name</label></h4>
+					<center><h3><label for="screen-name-input">Who's Playing?</label></h3>
 					<p class="table-requirements error" ng-show="registerError">{{registerError}}</p>
 					<!-- <input id="screen-name-input" class="form-control" type="text" ng-model="newScreenName" ng-trim="true" required><br> -->
 <select class="screen-name-input" class="form-control" ng-model="newScreenName" ng-trim="true" required>
@@ -27,7 +27,7 @@
 	<option>Amit</option>
 	<option>Hemang</option>
 	<option>Prasang</option>
-</select>
+</select><p>
 <input type="submit" value="Confirm" class="btn btn-primary">
 			</form>
 		</div>
@@ -62,7 +62,7 @@
 <center>
 <div align="right"><div id="box1">
 	<h3>Welcome <b>{{$root.screenName}}</b></h3>
-	<h5>Chips Remaining: <b>{{$root.totalChips}}</b></h5></div></div><p>
+	<h5><b>{{$root.totalChips}}</b> Chips</h5></div></div><p>
 <hr>
 <table class="table1">
 	<tr>
