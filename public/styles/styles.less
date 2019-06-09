@@ -11,6 +11,9 @@
 @back: #66ff99;
 @blue: #00ccff;
 @orange: #ff6600;
+@green: #00ff00;
+@red: #ff0000;
+@yellow: #ffff00;
 @font-face {
   font-family: '-';
   src: url('-.eot?#iefix') format('embedded-opentype'),  url('-.woff') format('woff'), url('-.ttf')  format('truetype'), url('-.svg#.') format('svg');
@@ -23,6 +26,28 @@
   grid-template-columns: auto auto;
   padding: 10px;
 } 
+
+#bug1 {
+    border: 2px solid @red;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+	text-decoration: none;
+}
+#bug2 {
+    border: 2px solid @yellow;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+	text-decoration: none;
+}
+#bug3 {
+    border: 2px solid @green;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+	text-decoration: none;
+}
 
 sup {
 padding: 2px;
