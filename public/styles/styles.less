@@ -33,28 +33,77 @@
 	padding: 3px;
   }
 
-  #bug1 {
-	border: 2px solid;
-	border-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1;
-    padding: 6px;
-    display: inline-block;
-    border-radius: 5px;
-	text-decoration: none;
-}
-#bug2 {
-    border: 2px solid @yellow;
-    padding: 6px;
-    display: inline-block;
-    border-radius: 5px;
-	text-decoration: none;
-}
-#bug3 {
-    border: 2px solid @green;
-    padding: 6px;
-    display: inline-block;
-    border-radius: 5px;
-	text-decoration: none;
-}
+  #bug-1 {
+	
+	display: inline-block;
+	position: relative;
+	padding: 6px;
+	box-sizing: border-box;
+	$border: 2px;
+	color: #000;
+	background: #FFF;
+	background-clip: padding-box;
+	border: solid $border transparent;
+	border-radius: 5px;
+  
+	&:before {
+	  content: '';
+	  position: absolute;
+	  top: 0; right: 0; bottom: 0; left: 0;
+	  z-index: -1;
+	  margin: -$border;
+	  border-radius: inherit;
+	  background: linear-gradient(to right, #ff0000, #ffff00);
+	}
+  }
+
+  #bug-1 {
+	
+	display: inline-block;
+	position: relative;
+	padding: 6px;
+	box-sizing: border-box;
+	$border: 2px;
+	color: #000;
+	background: #FFF;
+	background-clip: padding-box;
+	border: solid $border transparent;
+	border-radius: 5px;
+  
+	&:before {
+	  content: '';
+	  position: absolute;
+	  top: 0; right: 0; bottom: 0; left: 0;
+	  z-index: -1;
+	  margin: -$border;
+	  border-radius: inherit;
+	  background: linear-gradient(to right, #ffff00, #00ff00);
+	}
+  }
+
+  #bug-1 {
+	
+	display: inline-block;
+	position: relative;
+	padding: 6px;
+	box-sizing: border-box;
+	$border: 2px;
+	color: #000;
+	background: #FFF;
+	background-clip: padding-box;
+	border: solid $border transparent;
+	border-radius: 5px;
+  
+	&:before {
+	  content: '';
+	  position: absolute;
+	  top: 0; right: 0; bottom: 0; left: 0;
+	  z-index: -1;
+	  margin: -$border;
+	  border-radius: inherit;
+	  background: linear-gradient(to right, #00ff00, #00ff00);
+	}
+  }
 
 sup {
 padding: 2px;
