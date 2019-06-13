@@ -1,7 +1,7 @@
 @light-purple: #9880e9;
 @dark-purple: #160726;
 @purple: #2E1F3E;
-@transparent-purple: rgba(46,31,62,0.9);
+@transparent-purple: rgba(46, 31, 62, 0.9);
 @lavender: #BE78E8;
 @felt-green: #387C41;
 @dark-greek: #17541D;
@@ -14,77 +14,80 @@
 @green: #00ff00;
 @red: #ff0000;
 @yellow: #ffff00;
+
 @font-face {
-  font-family: '-';
-  src: url('-.eot?#iefix') format('embedded-opentype'),  url('-.woff') format('woff'), url('-.ttf')  format('truetype'), url('-.svg#.') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: '-';
+	src: url('-.eot?#iefix') format('embedded-opentype'), url('-.woff') format('woff'), url('-.ttf') format('truetype'), url('-.svg#.') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  padding: 10px;
-} 
+	display: grid;
+	grid-template-columns: auto auto;
+	padding: 10px;
+}
 
 .grid-container1 {
 	display: grid;
 	grid-template-columns: 70% 30%;
 	padding: 3px;
-  }
+}
 
 .grid-container2 {
 	display: grid;
 	grid-template-columns: auto auto auto;
 	padding: 3px;
-  }
+}
 
-  .grid-item1 {
+.grid-item1 {
 	padding: 10px;
-  }
+}
 
-  hr.backlog {
+hr.backlog {
 	border: 2px solid @red;
 	border-radius: 5px;
 	margin: 0.25em;
-  }
+}
 
-  hr.inprogress {
+hr.inprogress {
 	border: 2px solid @yellow;
 	border-radius: 5px;
 	margin: 0.25em;
-  }
+}
 
-  hr.done {
+hr.done {
 	border: 2px solid @green;
 	border-radius: 5px;
 	margin: 0.25em;
-  }  
+}
 
 #bug1 {
-    border: 2px solid @red;
-    padding: 6px;
-    display: inline-block;
-    border-radius: 5px;
+	border: 2px solid @red;
+	padding: 6px;
+	display: inline-block;
+	border-radius: 5px;
 	text-decoration: none;
 }
+
 #bug2 {
-    border: 2px solid @yellow;
-    padding: 6px;
-    display: inline-block;
-    border-radius: 5px;
+	border: 2px solid @yellow;
+	padding: 6px;
+	display: inline-block;
+	border-radius: 5px;
 	text-decoration: none;
 }
+
 #bug3 {
-    border: 2px solid @green;
-    padding: 6px;
-    display: inline-block;
-    border-radius: 5px;
+	border: 2px solid @green;
+	padding: 6px;
+	display: inline-block;
+	border-radius: 5px;
 	text-decoration: none;
 }
 
 sup {
-padding: 2px;
+	padding: 2px;
 }
 
 body {
@@ -94,7 +97,8 @@ body {
 	font-size: 1em;
 }
 
-input[type="text"], input[type="number"] {
+input[type="text"],
+input[type="number"] {
 	padding: 8px;
 	width: 228px;
 	border-radius: 5px;
@@ -107,38 +111,47 @@ input[type="text"], input[type="number"] {
 }
 
 input {
-    -webkit-appearance: none;
-    border-radius: 0;
+	-webkit-appearance: none;
+	border-radius: 0;
 }
 
-button, input[type="submit"], .button {
+button,
+input[type="submit"],
+.button {
 	padding: 8px;
-	background-color: rgba(0,0,0,0);
+	background-color: rgba(0, 0, 0, 0);
 	border-radius: 5px;
-	color: 	#000000;
-  font-family: '-';
-  text-decoration: none;
+	color: #000000;
+	font-family: '-';
+	text-decoration: none;
 	font-size: 1.7em;
 	font-weight: lighter;
+
 	&.small {
 		font-size: 1em;
 	}
+
 	&.control-button {
 		padding: 0;
 		height: 65%;
 		width: 85%;
 		background-color: @transparent-purple;
-    	color: 		#FFFFFF;
+		color: #FFFFFF;
 		border: 3px solid @light-purple;
 		border-radius: 10px;
 		cursor: pointer;
+
 		&.small {
 			font-size: 1em;
 		}
 	}
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
 	margin-top: 0;
 	display: inline;
 }
@@ -146,7 +159,7 @@ h1, h2, h3, h4, h5 {
 a {
 	text-decoration: none;
 	font-family: '-';
-	color: 	#000000;
+	color: #000000;
 	font-size: 1em;
 	white-space: nowrap;
 }
@@ -164,77 +177,80 @@ a {
 	width: 1024px;
 	height: 768px;
 }
-th{
-  width: 30%;
-  padding: 10px;
+
+th {
+	width: 30%;
+	padding: 10px;
 }
 
-th.align-right
-{
-   text-align: right;
-}
-th.align-left
-{
-   text-align: left;
+th.align-right {
+	text-align: right;
 }
 
-.table1{
-  border: 2px solid @black;
-  padding: 10px;
-  display: inline-block;
-  border-radius: 5px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-transition-duration: 0.4s;
-width:60%;
-box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+th.align-left {
+	text-align: left;
 }
 
-.table2{
-  border: 0px solid @black;
-  padding: 10px;
-  display: inline-block;
-  border-radius: 5px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-transition-duration: 0.4s;
-width:60%;
+.table1 {
+	border: 2px solid @black;
+	padding: 10px;
+	display: inline-block;
+	border-radius: 5px;
+	-webkit-transition-duration: 0.4s;
+	/* Safari */
+	transition-duration: 0.4s;
+	width: 60%;
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.table2 {
+	border: 0px solid @black;
+	padding: 10px;
+	display: inline-block;
+	border-radius: 5px;
+	-webkit-transition-duration: 0.4s;
+	/* Safari */
+	transition-duration: 0.4s;
+	width: 60%;
 }
 
 .button {
-background-color: white;
-color: black;
-    border: 2px solid #555555;
-    // padding: 15px 5px;
-    text-align: right;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    font-size: 12px;
-    // -webkit-transition-duration: 0.4s; /* Safari */
-    // transition-duration: 0.4s;
+	background-color: white;
+	color: black;
+	border: 2px solid #555555;
+	// padding: 15px 5px;
+	text-align: right;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	font-size: 12px;
+	// -webkit-transition-duration: 0.4s; /* Safari */
+	// transition-duration: 0.4s;
 }
+
 // .button:hover{
 //     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 //     text-decoration: none;
 //     }
 
 #box1 {
-    border: 2px solid @black;
-    padding: 10px;
-    display: inline-block;
-    border-radius: 5px;
-    -webkit-transition-duration: 0.4s;
-transition-duration: 0.4s;
-text-decoration: none;
+	border: 2px solid @black;
+	padding: 10px;
+	display: inline-block;
+	border-radius: 5px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	text-decoration: none;
 }
 
 #box2 {
 	// border: 2px solid @black;
 	background-color: #f8f7f7;
 	padding: 10px;
-    display: inline-block;
-    border-radius: 5px;
-text-decoration: none;
-width:100%;
+	display: inline-block;
+	border-radius: 5px;
+	text-decoration: none;
+	width: 100%;
 }
 
 // #box1:hover{
@@ -244,24 +260,24 @@ width:100%;
 
 
 .alert {
-    padding: 20px;
-    background-color: #f44336;
-    color: white;
+	padding: 20px;
+	background-color: #f44336;
+	color: white;
 }
 
 .closebtn {
-    margin-left: 15px;
-    color: white;
-    font-weight: bold;
-    float: right;
-    font-size: 22px;
-    line-height: 20px;
-    cursor: pointer;
-    transition: 0.3s;
+	margin-left: 15px;
+	color: white;
+	font-weight: bold;
+	float: right;
+	font-size: 22px;
+	line-height: 20px;
+	cursor: pointer;
+	transition: 0.3s;
 }
 
 .closebtn:hover {
-    color: black;
+	color: black;
 }
 
 // .border-style {
@@ -285,38 +301,42 @@ width:100%;
 
 #table-list {
 	th {
+
 		// color: #2e1f3e;
 		// background-color: #9880e9;
 		&.dark-border {
 			// border-right: 1px solid #2e1f3e;
 		}
 	}
+
 	.centered-text {
 		text-align: center;
 	}
+
 	margin: 40px 0 0;
 }
 
 #table {
 	background-color: #333333;
-    border-radius: 200px;
-    height: 52%;
-    left: 10%;
-    position: absolute;
-    top: 15%;
-    width: 80%;
-    z-index: 0;
-    // box-shadow: 0 0 25px 0 @dark-purple;
-    #felt {
-    	background-color: #009933;
-    	border-radius: 175px;
-    	width: 92%;
-    	height: 86%;
-    	position: relative;
-    	top: 7%;
-    	left: 4%;
-    	box-shadow: 0 0 20px 0 #17541D inset;
-    }
+	border-radius: 200px;
+	height: 52%;
+	left: 10%;
+	position: absolute;
+	top: 15%;
+	width: 80%;
+	z-index: 0;
+
+	// box-shadow: 0 0 25px 0 @dark-purple;
+	#felt {
+		background-color: #009933;
+		border-radius: 175px;
+		width: 92%;
+		height: 86%;
+		position: relative;
+		top: 7%;
+		left: 4%;
+		box-shadow: 0 0 20px 0 #17541D inset;
+	}
 }
 
 div.row {
@@ -324,6 +344,7 @@ div.row {
 	width: 100%;
 	position: relative;
 	z-index: 2;
+
 	&.controls {
 		background-color: #009933;
 		border-radius: 8px;
@@ -339,7 +360,7 @@ div.cell {
 
 	button {
 		margin: 22.5% 15%;
-    text-decoration: none;
+		text-decoration: none;
 	}
 }
 
@@ -353,12 +374,15 @@ div.controls {
 	div.cell {
 		width: 15%;
 	}
+
 	div.double-cell {
 		width: 30%;
+
 		.cell-content {
 			padding: 8%;
 		}
 	}
+
 	div.chat-cell {
 		float: left;
 		width: 25%;
@@ -383,29 +407,31 @@ input[type="range"] {
 div#chat {
 	div#messages {
 		border: 1px solid;
-	    border-radius: 8px;
-	    height: 120px;
-	    margin: 8px 8px 0 8px;
-	    background-color: #fff;
-	    padding: 8px;
-	    overflow: auto;
+		border-radius: 8px;
+		height: 120px;
+		margin: 8px 8px 0 8px;
+		background-color: #fff;
+		padding: 8px;
+		overflow: auto;
 
-	    p {
-	    	margin: 0;
-	    	word-wrap: break-word;
+		p {
+			margin: 0;
+			word-wrap: break-word;
 
-	    	&.log-message {
-	    		color: #A69029;
-	    	}
-	    }
+			&.log-message {
+				color: #A69029;
+			}
+		}
 	}
+
 	input[type="submit"] {
 		font-size: 1.3em;
 		padding: 5px 8px;
 		margin: 1px 0 0 2px;
-	    background-color: rgba(46, 31, 62, 0.9);
-	    border-radius: 8px;
+		background-color: rgba(46, 31, 62, 0.9);
+		border-radius: 8px;
 	}
+
 	input[type="text"] {
 		width: 240px;
 		font-size: 1em;
@@ -420,43 +446,52 @@ div.player-wrap {
 	width: 64%;
 	margin: 36% auto 0;
 	position: relative;
+
 	&.top {
 		margin-top: 45%;
 	}
+
 	&.bottom {
 		margin-top: 22%;
 	}
+
 	&.left {
 		margin-left: 30%;
 	}
+
 	&.right {
 		margin-left: 8%;
 	}
+
 	&.side {
 		margin-top: 32%;
 	}
 
 	.player-cards {
 		overflow: hidden;
-	    height: 60px;
-	    left: 32px;
-	    position: absolute;
-	    top: 0px;
-	    width: 100px;
-	    -webkit-transition: top 0.4s ease;
-    	transition: top 0.4s ease;
-	    &.dealt {
-	    	top: -60px;
-	    }
-	    .card:first-child {
-	    	left: 0;
-	    }
-	    .card {
-		    left: 28px;
-		    position: absolute;
-	    }
+		height: 60px;
+		left: 32px;
+		position: absolute;
+		top: 0px;
+		width: 100px;
+		-webkit-transition: top 0.4s ease;
+		transition: top 0.4s ease;
+
+		&.dealt {
+			top: -60px;
+		}
+
+		.card:first-child {
+			left: 0;
+		}
+
+		.card {
+			left: 28px;
+			position: absolute;
+		}
 	}
 }
+
 div.seat {
 	padding: 10% 0;
 	background-color: @back;
@@ -469,22 +504,26 @@ div.seat {
 	position: relative;
 	// box-shadow: 0 0 5px 0 @blue;
 	-webkit-transition: box-shadow 0.2s ease, border 0.2s ease;
-    transition: box-shadow 0.2s ease, border 0.2s ease;
+	transition: box-shadow 0.2s ease, border 0.2s ease;
+
 	&.active {
 		color: @black;
 		border: 5px solid @orange;
 		// box-shadow: 0 0 5px 0 @orange;
 	}
+
 	p {
 		text-overflow: ellipsis;
 		overflow: hidden;
 		margin: 0;
 	}
+
 	.player-content {
 		span {
 			line-height: 1.2;
 			display: block;
 		}
+
 		.notification {
 			line-height: 2.4;
 		}
@@ -493,11 +532,13 @@ div.seat {
 
 div#board-wrap {
 	margin: 6% 8%;
+
 	.card {
 		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 		border-radius: 8px;
 		margin: 0 auto;
 	}
+
 	.card-container {
 		width: 19%;
 		display: inline-block;
@@ -506,215 +547,277 @@ div#board-wrap {
 
 .card {
 	background-image: url("/images/deck.png");
-    background-size: 1040px auto;
-    border-radius: 8px 8px 0 0;
-    height: 100%;
-    box-shadow: 0 0 3px 0 #808080;
-    overflow: hidden;
-    width: 72px;
-    height: 107px;
-    /**
+	background-size: 1040px auto;
+	border-radius: 8px 8px 0 0;
+	height: 100%;
+	box-shadow: 0 0 3px 0 #808080;
+	overflow: hidden;
+	width: 72px;
+	height: 107px;
+
+	/**
 	 * CSS Sprites
 	 */
 	&.card-As {
 		background-position: 0.2% 0.5%;
 	}
+
 	&.card-Ah {
 		background-position: 0.2% 99.3%;
 	}
+
 	&.card-Ad {
 		background-position: 0.2% 66.5%;
 	}
+
 	&.card-Ac {
 		background-position: 0.2% 33.3%;
 	}
+
 	&.card-Ks {
 		background-position: 7.9% 0.5%;
 	}
+
 	&.card-Kh {
 		background-position: 7.9% 99.3%;
 	}
+
 	&.card-Kd {
 		background-position: 7.9% 66.5%;
 	}
+
 	&.card-Kc {
 		background-position: 7.9% 33.3%;
 	}
+
 	&.card-Qs {
 		background-position: 15.5% 0.5%;
 	}
+
 	&.card-Qh {
 		background-position: 15.5% 99.3%;
 	}
+
 	&.card-Qd {
 		background-position: 15.5% 66.5%;
 	}
+
 	&.card-Qc {
 		background-position: 15.5% 33.3%;
 	}
+
 	&.card-Js {
 		background-position: 23.2% 0.5%;
 	}
+
 	&.card-Jh {
 		background-position: 23.2% 99.3%;
 	}
+
 	&.card-Jd {
 		background-position: 23.2% 66.5%;
 	}
+
 	&.card-Jc {
 		background-position: 23.2% 33.3%;
 	}
+
 	&.card-Ts {
 		background-position: 30.9% 0.5%;
 	}
+
 	&.card-Th {
 		background-position: 30.9% 99.3%;
 	}
+
 	&.card-Td {
 		background-position: 30.9% 66.5%;
 	}
+
 	&.card-Tc {
 		background-position: 30.9% 33.3%;
 	}
+
 	&.card-9s {
 		background-position: 38.6% 0.5%;
 	}
+
 	&.card-9h {
 		background-position: 38.6% 99.3%;
 	}
+
 	&.card-9d {
 		background-position: 38.6% 66.5%;
 	}
+
 	&.card-9c {
 		background-position: 38.6% 33.3%;
 	}
+
 	&.card-8s {
 		background-position: 46.3% 0.5%;
 	}
+
 	&.card-8h {
 		background-position: 46.3% 99.3%;
 	}
+
 	&.card-8d {
 		background-position: 46.3% 66.5%;
 	}
+
 	&.card-8c {
 		background-position: 46.3% 33.3%;
 	}
+
 	&.card-7s {
 		background-position: 53.8% 0.5%;
 	}
+
 	&.card-7h {
 		background-position: 53.8% 99.3%;
 	}
+
 	&.card-7d {
 		background-position: 53.8% 66.5%;
 	}
+
 	&.card-7c {
 		background-position: 53.8% 33.3%;
 	}
+
 	&.card-6s {
 		background-position: 61.5% 0.5%;
 	}
+
 	&.card-6h {
 		background-position: 61.5% 99.3%;
 	}
+
 	&.card-6d {
 		background-position: 61.5% 66.5%;
 	}
+
 	&.card-6c {
 		background-position: 61.5% 33.3%;
 	}
+
 	&.card-5s {
 		background-position: 69.2% 0.5%;
 	}
+
 	&.card-5h {
 		background-position: 69.2% 99.3%;
 	}
+
 	&.card-5d {
 		background-position: 69.2% 66.5%;
 	}
+
 	&.card-5c {
 		background-position: 69.2% 33.3%;
 	}
+
 	&.card-4s {
 		background-position: 76.8% 0.5%;
 	}
+
 	&.card-4h {
 		background-position: 76.8% 99.3%;
 	}
+
 	&.card-4d {
 		background-position: 76.8% 66.5%;
 	}
+
 	&.card-4c {
 		background-position: 76.8% 33.3%;
 	}
+
 	&.card-3s {
 		background-position: 84.5% 0.5%;
 	}
+
 	&.card-3h {
 		background-position: 84.5% 99.3%;
 	}
+
 	&.card-3d {
 		background-position: 84.5% 66.5%;
 	}
+
 	&.card-3c {
 		background-position: 84.5% 33.3%;
 	}
+
 	&.card-2s {
 		background-position: 92.1% 0.5%;
 	}
+
 	&.card-2h {
 		background-position: 92.1% 99.3%;
 	}
+
 	&.card-2d {
 		background-position: 92.1% 66.5%;
 	}
+
 	&.card-2c {
 		background-position: 92.1% 33.3%;
 	}
+
 	&.card-back {
 		background-position: 99.8% 33.3%;
 	}
 }
 
 #dealer-wrap-0 {
-    top: 105%;
+	top: 105%;
 	left: 82%;
 }
+
 #dealer-wrap-1 {
-    top: 105%;
+	top: 105%;
 	left: 5%;
 }
+
 #dealer-wrap-2 {
-    top: 105%;
+	top: 105%;
 	left: 80%;
 }
+
 #dealer-wrap-3 {
 	top: 105%;
 	left: 0px;
 }
+
 #dealer-wrap-4 {
-    top: 75%;
+	top: 75%;
 	left: -20%;
 }
+
 #dealer-wrap-5 {
-    top: -30%;
+	top: -30%;
 	left: 0%;
 }
+
 #dealer-wrap-6 {
-    top: -35%;
+	top: -35%;
 	left: 0%;
 }
+
 #dealer-wrap-7 {
 	left: 85%;
-    top: -35%;
+	top: -35%;
 }
+
 #dealer-wrap-8 {
-    top: -35%;
+	top: -35%;
 	left: 85%;
 }
+
 #dealer-wrap-9 {
-    top: 70%;
+	top: 70%;
 	left: 110%;
 }
 
@@ -722,52 +825,61 @@ div#board-wrap {
 	position: absolute;
 	// border: 2px solid @light-purple;
 	// border-radius: 20px;
-    width: 12%;
-    height: 20%;
-    text-align: center;
-    // background-color: @transparent-purple;
-    line-height: 1.25;
-    // box-shadow: 0 3px 0 0 #604FAD;
+	width: 12%;
+	height: 20%;
+	text-align: center;
+	// background-color: @transparent-purple;
+	line-height: 1.25;
+	// box-shadow: 0 3px 0 0 #604FAD;
 }
 
 #bets-0 {
 	top: 75%;
 	left: 75%;
 }
+
 #bets-1 {
-    top: 110%;
+	top: 110%;
 	left: 0;
 }
+
 #bets-2 {
 	top: 110%;
 	left: 0;
 }
+
 #bets-3 {
 	left: -75%;
-    top: 75%;
+	top: 75%;
 }
+
 #bets-4 {
 	top: 40%;
 	left: -75%;
 }
+
 #bets-5 {
-    top: -30%;
+	top: -30%;
 	left: -75%;
 }
+
 #bets-6 {
-    top: -66%;
+	top: -66%;
 	left: -50%;
 }
+
 #bets-7 {
-    top: -66%;
+	top: -66%;
 	left: 50%;
 }
+
 #bets-8 {
-    top: -30%;
+	top: -30%;
 	left: 75%;
 }
+
 #bets-9 {
-    top: 33%;
+	top: 33%;
 	left: 75%;
 }
 
@@ -775,17 +887,18 @@ div#board-wrap {
 	position: absolute;
 	text-align: center;
 	width: 100%;
-  color: @white;
+	color: @white;
 	text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
 
 #pot-wrap {
 	height: 10%;
+
 	#pot {
 		display: block;
 		width: 100%;
 		text-align: center;
-    color: @white;
+		color: @white;
 		text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 	}
 }
@@ -804,6 +917,7 @@ div#board-wrap {
 	width: 100%;
 	height: 100%;
 	z-index: 100;
+
 	.modal {
 		padding: 14px;
 		background-color: #fff;
@@ -813,16 +927,19 @@ div#board-wrap {
 		top: 18%;
 		width: 480px;
 		z-index: 101;
+
 		label {
 			display: block;
-		    font-size: large;
-		    margin-bottom: 10px;
+			font-size: large;
+			margin-bottom: 10px;
 		}
+
 		.input-left {
 			margin-right: 32px;
 			width: 50%;
 		}
 	}
+
 	#curtain {
 		position: fixed;
 		top: 0;
@@ -837,13 +954,15 @@ div#board-wrap {
 #developer-info {
 	margin-top: 8px;
 	font-size: 0.8em;
+
 	a {
 		text-decoration: underline;
 	}
 }
 
 /* Landscape phone to portrait tablet */
-@media screen and (max-width: 767px), screen and (max-device-width: 480px)  {
+@media screen and (max-width: 767px),
+screen and (max-device-width: 480px) {
 	#content {
 		width: 480px;
 		height: 320px;
@@ -864,15 +983,19 @@ div#board-wrap {
 
 	div.player-wrap {
 		margin: 25% auto 0;
+
 		&.top {
-    		margin-top: 36%;
+			margin-top: 36%;
 		}
+
 		&.side {
-    		margin-top: 28%;
+			margin-top: 28%;
 		}
+
 		.player-cards {
 			left: 8px;
 			height: 25px;
+
 			&.dealt {
 				top: -25px;
 			}
@@ -897,21 +1020,27 @@ div#board-wrap {
 		.chat-cell {
 			display: none;
 		}
+
 		.cell {
 			width: 40%;
+
 			button {
 				margin: 15%;
 			}
 		}
+
 		.double-cell {
 			width: 40%;
+
 			.cell-content {
-			    padding: 4% 8%;
-			    input[type="range"] {
-				    margin-top: 0;
+				padding: 4% 8%;
+
+				input[type="range"] {
+					margin-top: 0;
 				}
+
 				#bet-input {
-				    margin-top: 5px;
+					margin-top: 5px;
 				}
 			}
 		}
@@ -919,6 +1048,7 @@ div#board-wrap {
 
 	.modal-wrap .modal {
 		width: 300px;
+
 		.input-left {
 			font-size: 2em;
 		}
@@ -942,9 +1072,11 @@ div#board-wrap {
 
 	div.player-wrap {
 		margin: 34% auto 0;
+
 		.player-cards {
 			left: 17px;
 			height: 50px;
+
 			&.dealt {
 				top: -50px;
 			}
@@ -969,7 +1101,7 @@ div#board-wrap {
 		width: 137px;
 		font-size: 1.3em;
 		padding: 8px;
-    font-style:italic;
+		font-style: italic;
 	}
 
 	div#chat input[type="submit"] {
