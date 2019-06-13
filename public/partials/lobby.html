@@ -1,0 +1,223 @@
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+<center>
+<div id="lobby">
+<div class="modal-wrap" ng-show="!$root.screenName">
+		<div class="modal" style="display:block;">
+			<form ng-submit="register()">
+					<h1>Who's Playing?</h1><br>
+					<em>This will reset as soon as you refresh or close this session</em><hr>
+					<h4><label for="screen-name-input">Select your name from the list</label></h4>
+					<p class="table-requirements error" ng-show="registerError">{{registerError}}</p>
+					<!-- <input id="screen-name-input" class="form-control" type="text" ng-model="newScreenName" ng-trim="true" required><br> -->
+<select class="screen-name-input" class="form-control" ng-model="newScreenName" ng-trim="true" required>
+	<option>Gagan</option>
+	<option>Nikhil</option>
+	<option>Manan</option>
+	<option>Udit</option>
+	<option>Amit</option>
+	<option>Hemang</option>
+	<option>Prasang</option>
+</select>
+<input type="submit" value="Confirm" class="btn btn-primary">
+</form>
+</div>
+<div id="curtain" ng-show="!$root.screenName"></div>
+</div>
+<div id="loginModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" ng-show="!$root.screenName" >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+	  <form ng-submit="register()">
+      <div class="modal-body">
+				<label for="screen-name-input">Username: </label>
+				<p class="table-requirements error" ng-show="registerError">{{registerError}}</p>
+				<input id="screen-name-input" class="" type="text" ng-model="newScreenName" ng-trim="true" required>
+
+      </div>
+	  <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Login</button>
+      </div>
+	  </form>
+    </div>
+  </div>
+</div>
+<div></div><p>
+<div class="grid-container">
+  <div class="grid-item"><h1>Udesh<br>Poker</h1><br>by Udesh Inc</div>
+  <div class="grid-item"><div id="box1">
+	<h3><center><b>{{$root.screenName}}</b></h3>
+	<h5><b>{{$root.totalChips}}</b> Chips</h5></center></div></div> 
+<hr>
+<center>
+		<div class="grid-container1">
+				<div class="grid-item">
+<table class="table1">
+	<tr>
+		<th><h1>Cheap Ass Niggas</h1></th>
+		<th class="align-right"><a href="/table-{{6}}/{{1}}" class="button"><h3>Enter Room</h3></a></th>
+	</tr>
+	<td><h5><b>Buy-In</b> 3000</td>
+	<td align="right"><h5><b>Stakes</b> 100|200</h5></td>
+</table><p></p>
+<table class="table1">
+	<tr>
+		<th><h1>Hmmmm</h1></th>
+		<th class="align-right"><a href="/table-{{6}}/{{2}}" class="button"><h3>Enter Room</h3></a></th>
+	</tr>
+	<td><h5><b>Buy-In</b> 100000</td>
+	<td align="right"><h5><b>Stakes</b> 200|400</h5></td>
+</table><p></p>
+<table class="table1">
+	<tr>
+		<th><h1>:)</h1></th>
+		<th class="align-right"><a href="/table-{{6}}/{{3}}" class="button"><h3>Enter Room</h3></a></th>
+	</tr>
+	<td><h5><b>Buy-In</b> 20000</td>
+	<td align="right"><h5><b>Stakes</b> 300|500</h5></td>
+</table>
+</div>
+<div class="grid-item">
+	<div id="box1">
+	<table>
+		<h3>Leaderboard</h3>
+		<tr>
+			<!-- <th class="align-left"><center><h5>Player</h5></th>
+			<th class="align-right"><center><h5>Chips</h5></th> -->
+		</tr>
+	</table>
+	<center><h3>COMING SOON</h3></center>
+	</div>
+</div>
+</div>
+<hr>
+	<h1>Udesh Poker 2.0</h1><br>
+	<h4>Roadmap</h4>
+	</center>
+	<h1>UI</h1><br>
+	<h5>User Interface is being overhauled</h5><p>
+	<center>
+		<div id="box2">
+	<div class="grid-container2">
+			<div class="grid-item1">
+			<h3>Backlog</h3>
+			<hr class="backlog">
+			<div align="left">
+			</div>
+			</div>
+			<div class="grid-item1">
+			<h3>In Progress</h3>
+			<hr class="inprogress">
+			<div align="left">
+			<li>Font sizing issue</li>
+			<li>Remake Roadmap for Udesh Poker 2.0</li>
+			<li>Create placeholder for Leaderboards</li>
+			</div></div>
+			<div class="grid-item1">
+			<h3>Done</h3>
+			<hr class="done">
+			<div align="left">
+			<li>A new lobby</li>
+			<li>Update Table inside Rooms</li>
+			<li>A Roadmap for Udesh Poker 2.0</li>
+			</div></div>
+			</div>
+		</div></center><br><p>
+				<h1>Poker Modules</h1><br>
+				<h5>The main functioning of the Web App</h5><p>
+				<center>
+					<div id="box2">
+				<div class="grid-container2">
+						<div class="grid-item1">
+						<h3>Backlog</h3>
+						<hr class="backlog">
+						<div align="left">
+						<li>Create a new Deck.png</li>
+						<li>Remove 2,4 and 10 Seat Tables</li>
+						</div></div>
+						<div class="grid-item1">
+						<h3>In Progress</h3>
+						<hr class="inprogress">
+						<div align="left">
+						<li>Fix the Stakes, Buy-In and Room Names</li>
+						</div></div>
+						<div class="grid-item1">
+						<h3>Done</h3>
+						<hr class="done">
+						<div align="left">
+						</div></div>
+						</div>
+					</div></center><br><p>
+	<h1>Development</h1><br>
+	<h5>New features being added</h5><p>
+	<center>
+		<div id="box2">
+	<div class="grid-container2">
+			<div class="grid-item1">
+			<h3>Backlog</h3>
+			<hr class="backlog">
+			<div align="left">
+			<li>Database to store chip data</li>
+			<li>Leaderboard</li>
+			<li>A new player object</li>
+			<li>A new register function to allow chips data to be stored on a database</li>
+			</div></div>
+			<div class="grid-item1">
+			<h3>In Progress</h3>
+			<hr class="inprogress">
+			<div align="left">
+			<li>Remove excess files and rewrite code</li>
+			</div></div>
+			<div class="grid-item1">
+			<h3>Done</h3>
+			<hr class="done">
+			<div align="left">
+			</div></div>
+			</div>
+		</div></center><br><p>
+				<h1>Deployment</h1><br>
+	<h5>Changing Deployment methods</h5><p>
+	<center>
+		<div id="box2">
+	<div class="grid-container2">
+			<div class="grid-item1">
+			<h3>Backlog</h3>
+			<hr class="backlog">
+			<div align="left">
+			</div></div>
+			<div class="grid-item1">
+			<h3>In Progress</h3>
+			<hr class="inprogress">
+			<div align="left">
+			<li>Use Git to directly push updates to GitHub</li>
+			<li>Automatic Deployment from GitHub to Heroku</li>
+			</div></div>
+			<div class="grid-item1">
+			<h3>Done</h3>
+			<hr class="done">
+			<div align="left">
+			<li>Improving deployment method</li>
+			<li>Create a local Node project to view changes before pushing</li>
+			</div></div>
+			</div>
+		</div><p>
+	<h5>Chips amount will reset back to <b>100000</b> upon refreshing<sup>2</sup></h5></center>
+	<hr><center>
+	<table class="table2">
+			<tr>
+				<th align="left">A product of<br><h1>Udesh. Inc</h1></th>
+				<th align="left">Made by<br><h1>Gagan Gupta</h1></th>
+			</tr>
+		<td>Udesh Poker<sup>TM</sup> by Udesh. Inc</td>
+			<td>&nbsp;</td>
+		</table>
+</html>
