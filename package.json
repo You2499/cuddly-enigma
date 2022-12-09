@@ -12,7 +12,7 @@
   "dependencies": {
     "connect": "~3.6.6",
     "errorhandler": "^1.5.0",
-    "express": "~4.16.3",
+    "express": "~4.17.3",
     "jade": "~1.11.0",
     "less": "~3.7.1",
     "less-middleware": "~3.0.1",
